@@ -21,7 +21,7 @@
 
 
 def convert_time(duration: int) -> str:
-    str_out = f"вы передали {duration} секунд"
+    str_out = f"вы передали {duration} секунд и это равняется"
     return str_out
 duration = int(input('Введите промежуток времени в секундах'))
 result = convert_time(duration)
@@ -32,7 +32,7 @@ duration_list = {}
 if duration // 86400 > 0:
     day = duration//86400
     duration_list[day] = 'дн'
-    duration = duration % 8640
+    duration = duration % 86400
 if duration // 3600 > 0:
     hour = duration // 3600
     duration_list[hour] = 'час'
@@ -45,5 +45,6 @@ if duration // 1 > 0:
     second = duration // 1
     duration_list[second] = 'сек'
     duration = duration % 1
-for key in duration_list:
+
+for key in duration_list.keys():
     print(key, duration_list[key])
