@@ -59,6 +59,7 @@ def currency_rates_adv(code: str) -> str | None:
 
 
 
+
 kurs, date_value = currency_rates_adv("JPY")
 
 empty = bool(not kurs and not date_value)

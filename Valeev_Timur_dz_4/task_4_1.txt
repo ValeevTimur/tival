@@ -50,3 +50,4 @@ tzdata==2021.5
 urllib3==1.26.8
 virtualenv==20.13.0
 PS C:\Users\Печенька\PycharmProjects\tival>
+
