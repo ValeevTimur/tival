@@ -1,0 +1,53 @@
+PS C:\Users\Печенька\PycharmProjects\tival> pip show pillow
+WARNING: Package(s) not found: pillow
+PS C:\Users\Печенька\PycharmProjects\tival>
+
+
+PS C:\Users\Печенька\PycharmProjects\tival> pip install pillow
+Collecting pillow
+  Downloading Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 930 kB/s
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+
+
+PS C:\Users\Печенька\PycharmProjects\tival> virtualenv virt
+created virtual environment CPython3.10.0.final.0-64 in 242ms
+  creator CPython3Windows(dest=C:\Users\Печенька\PycharmProjects\tival\virt, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Печенька\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.3.1, setuptools==60.2.0, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+
+PS C:\Users\Печенька\PycharmProjects\tival>  virt\Scripts\activate.ps1
+(virt) PS C:\Users\Печенька\PycharmProjects\tival> pip freeze
+(virt) PS C:\Users\Печенька\PycharmProjects\tival>
+
+
+(virt) PS C:\Users\Печенька\PycharmProjects\tival> pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+(virt) PS C:\Users\Печенька\PycharmProjects\tival>
+
+
+(virt) PS C:\Users\Печенька\PycharmProjects\tival> deactivate
+PS C:\Users\Печенька\PycharmProjects\tival> pip freeze
+asgiref==3.4.1
+certifi==2021.10.8
+charset-normalizer==2.0.10
+distlib==0.3.4
+Django==4.0
+filelock==3.4.2
+idna==3.3
+Pillow==9.0.0
+platformdirs==2.4.1
+requests==2.27.1
+six==1.16.0
+sqlparse==0.4.2
+tzdata==2021.5
+urllib3==1.26.8
+virtualenv==20.13.0
+PS C:\Users\Печенька\PycharmProjects\tival>
+
