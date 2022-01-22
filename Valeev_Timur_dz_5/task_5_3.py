@@ -39,4 +39,7 @@ generator = check_gen(tutors, klasses)
 # добавьте здесь доказательство, что создали именно генератор
 for _ in range(len(tutors)):
     print(next(generator))
+
+print(type(generator))
 # next(generator)  # если раскомментировать, то должно падать в traceback по StopIteration
+
